@@ -117,7 +117,7 @@ export default class Layout extends React.Component {
     // );
 
 
-    if (this.context.router.routes[1].path === 'docs/react/:children') {
+    if (this.context.router.routes[1].path === 'docs/react/:children'||this.context.router.routes[1].path ==='components/:children/') {
       return (
         <IntlProvider locale={appLocale.locale} messages={appLocale.messages}>
           <div className="page-wrapper">
