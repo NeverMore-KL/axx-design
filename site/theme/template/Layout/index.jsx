@@ -116,15 +116,21 @@ export default class Layout extends React.Component {
     //   </a>
     // );
 
-    return (
-      <IntlProvider locale={appLocale.locale} messages={appLocale.messages}>
-        <div className="page-wrapper">
-          {/* {promoteBanner} */}
-          <Header {...restProps} />
-          {children}
-          {/* <Footer {...restProps} /> */}
-        </div>
-      </IntlProvider>
-    );
+
+    if (this.context.router.routes[1].path === 'docs/react/:children') {
+      return (
+        <IntlProvider locale={appLocale.locale} messages={appLocale.messages}>
+          <div className="page-wrapper">
+            {/* {promoteBanner} */}
+            <Header {...restProps} />
+            {children}
+            {/* <Footer {...restProps} /> */}
+          </div>
+        </IntlProvider>
+      );
+    } else {
+      return null;
+    }
+
   }
 }
