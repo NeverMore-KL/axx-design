@@ -10,7 +10,7 @@ title:
 
 在企业级业务中使用设计模式，能大幅度提升研发团队的确定性，节约无谓的设计且保持系统一致性，让『设计者』把创造力专注在最需要的地方。
 
-设计模式秉承 Ant Design 设计价值观，针对企业级产品中反复出现的设计问题给出一般解决方案。设计者可直接使用设计模式完成界面设计；也可以设计模式为起点，衍生出更具业务特性的解决方案满足个性化设计需求。
+设计模式秉承 Axx Design 设计价值观，针对企业级产品中反复出现的设计问题给出一般解决方案。设计者可直接使用设计模式完成界面设计；也可以设计模式为起点，衍生出更具业务特性的解决方案满足个性化设计需求。
 
 同时，这是一份动态更新的设计文档，你的阅读和反馈正是我们不断前进的动力，[Github 反馈地址](https://github.com/ant-design/ant-design/issues)。
 
@@ -31,6 +31,6 @@ title:
 
 我们和工程师通力合作，将设计模式转换为可重用代码，最大程度提升你们的工作效率和沟通效率。
 
-- [Ant Design Pro](https://pro.ant.design)：开箱即用的解决方案，包含 20+ 模板以及 10+ 业务组件
-- [Ant Design Components](https://ant.design/docs/react/introduce)：Ant Design 的 React 实现，是风靡全球的组件库，包含 50+ 基础组件
-- [Ant Design Library](http://library.ant.design/)：和代码配套 Axure 资源包，让你的原型精美得像视觉稿，包含模板、组件等元素
+- [Axx Design Pro](https://pro.ant.design)：开箱即用的解决方案，包含 20+ 模板以及 10+ 业务组件
+- [Axx Design Components](https://ant.design/docs/react/introduce)：Axx Design 的 React 实现，是风靡全球的组件库，包含 50+ 基础组件
+- [Axx Design Library](http://library.ant.design/)：和代码配套 Axure 资源包，让你的原型精美得像视觉稿，包含模板、组件等元素

@@ -1,9 +1,9 @@
 ---
 order: 0
-title: Ant Design of React
+title: Axx Design of React
 ---
 
-Following the Ant Design specification, we developed a React UI library `antd` that contains a set of high quality components and demos for building rich, interactive user interfaces.
+Following the Axx Design specification, we developed a React UI library `antd` that contains a set of high quality components and demos for building rich, interactive user interfaces.
 
 <div class="pic-plus">
   <img width="150" src="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg">
@@ -121,7 +121,7 @@ import 'antd/dist/antd.css';  // or 'antd/dist/axxd.less'
 
 - [Home Page](http://ant.design/)
 - [Components](/docs/react/introduce)
-- [Ant Design Pro](http://pro.ant.design/)
+- [Axx Design Pro](http://pro.ant.design/)
 - [Change Log](/changelog)
 - [Scaffold Market](http://scaffold.ant.design)
 - [rc-components](http://react-component.github.io/)
@@ -131,7 +131,7 @@ import 'antd/dist/antd.css';  // or 'antd/dist/axxd.less'
 - [Versioning Release Note](https://github.com/ant-design/ant-design/wiki/%E8%BD%AE%E5%80%BC%E8%A7%84%E5%88%99%E5%92%8C%E7%89%88%E6%9C%AC%E5%8F%91%E5%B8%83%E6%B5%81%E7%A8%8B)
 - [FAQ](https://github.com/ant-design/ant-design/wiki/FAQ)
 - [CodeSandbox template](https://u.ant.design/codesandbox-repro) for bug reports
-- [Awesome Ant Design](https://github.com/websemantics/awesome-ant-design)
+- [Awesome Axx Design](https://github.com/websemantics/awesome-ant-design)
 - [Customize Theme](/docs/react/customize-theme)
 
 ## Companies using antd
@@ -145,7 +145,7 @@ import 'antd/dist/antd.css';  // or 'antd/dist/axxd.less'
 - [Didi](http://www.xiaojukeji.com/)
 - [Eleme](https://www.ele.me/)
 
-> If your company or product uses Ant Design, let us know [here](https://github.com/ant-design/ant-design/issues/477)!
+> If your company or product uses Axx Design, let us know [here](https://github.com/ant-design/ant-design/issues/477)!
 
 ## Contributing
 

@@ -4,7 +4,7 @@ order: 4
 title: 图标
 ---
 
-图标是具有指代意义的图形，也是一种标识。通过使用图标表达命令，强调状态，表示产品或类别。为了系统及跨平台之间图形认知保持一致，Ant Design 的图标在设计和使用时有以下两个原则点需要注意：
+图标是具有指代意义的图形，也是一种标识。通过使用图标表达命令，强调状态，表示产品或类别。为了系统及跨平台之间图形认知保持一致，Axx Design 的图标在设计和使用时有以下两个原则点需要注意：
 
 - 简单的图形语言以及高辨识度。清晰、直观的图标更能明确指代含义便于识别记忆；
 - 保持图标之间一致的风格和表现方式。界面中的所有图标都应该在细节设计、透视和笔画权重上保持一致。
@@ -40,16 +40,16 @@ title: 图标
 <img class="preview-img no-padding good" align="right" src="https://gw.alipayobjects.com/zos/rmsportal/uoNmxXiqKpfoFDdEVjUB.png" alt="正确示范" description="icon 的线条粗细统一保持为 72px">
 <img class="preview-img no-padding bad" align="right" src="https://gw.alipayobjects.com/zos/rmsportal/cnFYbWzcKaPFSiHcptCF.png" alt="错误示范" description="icon 的线条粗细不统一">
 
-一致的笔画权重是保持整个图标系统视觉统一的关键，Ant Design 系统图标的线条统一为 72px 宽度。
+一致的笔画权重是保持整个图标系统视觉统一的关键，Axx Design 系统图标的线条统一为 72px 宽度。
 
 ### 边角
 
-<img class="preview-img no-padding good" align="right" src="https://gw.alipayobjects.com/zos/rmsportal/tGbuhPmvEJXmOFoYAkPK.png" alt="正确示范" description="图标的边角设计都遵循了 Ant Design 的规范">
+<img class="preview-img no-padding good" align="right" src="https://gw.alipayobjects.com/zos/rmsportal/tGbuhPmvEJXmOFoYAkPK.png" alt="正确示范" description="图标的边角设计都遵循了 Axx Design 的规范">
 <img class="preview-img no-padding bad" align="right" src="https://gw.alipayobjects.com/zos/rmsportal/JekevTlqdDJQLIQwrppm.png" alt="错误示范" description="线条的终端并不是圆角">
 
 一致的角度半径也是保持整个图标系统视觉统一的重要元素。
 
-Ant Design 的图标设计中，外轮廓线统一半径为 72px 的圆角，icon 内部空间的边角保持直角，笔画的终端为圆角。
+Axx Design 的图标设计中，外轮廓线统一半径为 72px 的圆角，icon 内部空间的边角保持直角，笔画的终端为圆角。
 
 ### 视觉修正
 
@@ -75,7 +75,7 @@ Ant Design 的图标设计中，外轮廓线统一半径为 72px 的圆角，ico
 
 <img class="preview-img no-padding" align="right" src="https://gw.alipayobjects.com/zos/rmsportal/jAuedlyhNIDyOIZTqbqN.png">
 
-应用于页面时请使用 Ant Design 的规范尺寸，与字体搭配时和字体的尺寸保持一致。
+应用于页面时请使用 Axx Design 的规范尺寸，与字体搭配时和字体的尺寸保持一致。
 
 例如：和 12pt 字体搭配时，图标使用 12px，图标与文字的间距为 8px。
 

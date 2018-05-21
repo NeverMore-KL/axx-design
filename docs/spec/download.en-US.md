@@ -4,7 +4,7 @@ order: 0
 title: Resources
 ---
 
-Please find below some of the design resources and tools about Ant Design that we consider valuable. More of this is still being collected.
+Please find below some of the design resources and tools about Axx Design that we consider valuable. More of this is still being collected.
 
 <div class="resource-cards">
   <a target="_blank" href="https://github.com/ant-design/ant-design/releases/download/resource/Ant.Design.3.0.Components.sketch" class="resource-card">
@@ -30,7 +30,7 @@ Please find below some of the design resources and tools about Ant Design that w
       <img width="65" src="https://gw.alipayobjects.com/zos/rmsportal/ibCZMxKsTUzDbwTEdcTC.svg">
     </div>
     <div class="resource-card-content">
-      <span class="resource-card-title">Ant Design Pro</span>
+      <span class="resource-card-title">Axx Design Pro</span>
       <span class="resource-card-description">Common Templates and Pages</span>
     </div>
   </a>
@@ -39,8 +39,8 @@ Please find below some of the design resources and tools about Ant Design that w
       <img width="50" src="https://gw.alipayobjects.com/zos/rmsportal/TXrKQUJBTuwSTGimGYYn.png">
     </div>
     <div class="resource-card-content">
-      <span class="resource-card-title">Ant Design Library</span>
-      <span class="resource-card-description">A powerful Axure library of Ant Design</span>
+      <span class="resource-card-title">Axx Design Library</span>
+      <span class="resource-card-description">A powerful Axure library of Axx Design</span>
     </div>
   </a>
   <span class="resource-card">

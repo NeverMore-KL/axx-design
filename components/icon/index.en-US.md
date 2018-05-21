@@ -74,4 +74,4 @@ You can set `style` and `className` for size and color of icons because they are
 | -------- | ----------- | ---- | ------- |
 | spin | Rotate icon with animation | boolean | false |
 | style | style properties of icon, like fontSize and color | object | - |
-| type | Type of ant design icon | string | - |
+| type | Type of Axx Design icon | string | - |

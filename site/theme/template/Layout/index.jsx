@@ -60,7 +60,9 @@ export default class Layout extends React.Component {
   }
 
   componentWillMount() {
-    this.context.router.push('/docs/react/introduce-cn/');
+    if(this.context.router.location.pathname=='index-cn'){
+      this.context.router.push('/docs/react/introduce-cn/');
+    }
   }
 
   componentDidMount() {
@@ -128,9 +130,9 @@ export default class Layout extends React.Component {
           </div>
         </IntlProvider>
       );
-    } else {
+    } 
+    else {
       return null;
     }
-
   }
 }
