@@ -61,7 +61,7 @@ export default class Layout extends React.Component {
 
   componentWillMount() {
     if(this.context.router.location.pathname=='index-cn'){
-      this.context.router.push('/docs/react/introduce-cn/');
+      this.context.router.push('/docs/react/introduce-cn');
     }
   }
 
