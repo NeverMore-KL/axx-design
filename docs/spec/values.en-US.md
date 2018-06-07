@@ -1,10 +1,10 @@
 ---
-category: Ant Design
+category: Axx Design
 order: 1
 title: Design Values
 ---
 
-Ant Design provides a practical evaluation of better design for both designers of Ant Design and designers who are using it. At the same time, it build a foundation for design principles and design patterns which could provide guideline and general solutions for specified design goal.
+Axx Design provides a practical evaluation of better design for both designers of Axx Design and designers who are using it. At the same time, it build a foundation for design principles and design patterns which could provide guideline and general solutions for specified design goal.
 
 <div>
   <img src="https://gw.alipayobjects.com/zos/rmsportal/kEwBspjVFChYqhqafCiW.png" />

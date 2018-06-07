@@ -25,16 +25,16 @@ module.exports = {
   source: {
     components: './components',
     docs: './docs',
-    changelog: [
-      'CHANGELOG.zh-CN.md',
-      'CHANGELOG.en-US.md',
-    ],
+    // changelog: [
+    //   'CHANGELOG.zh-CN.md',
+    //   'CHANGELOG.en-US.md',
+    // ],
   },
   theme: './site/theme',
   htmlTemplate: './site/theme/static/template.html',
   themeConfig: {
     categoryOrder: {
-      'Ant Design': 0,
+      'Axx Design': 0,
       原则: 1,
       Principles: 1,
       视觉: 2,

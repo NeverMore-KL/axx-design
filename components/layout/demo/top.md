@@ -48,7 +48,7 @@ ReactDOM.render(
       <div style={{ background: '#fff', padding: 24, minHeight: 280 }}>Content</div>
     </Content>
     <Footer style={{ textAlign: 'center' }}>
-      Ant Design ©2016 Created by Ant UED
+      Axx Design ©2016 Created by Ant UED
     </Footer>
   </Layout>
 , mountNode);

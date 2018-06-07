@@ -60,7 +60,9 @@ export default class Layout extends React.Component {
   }
 
   componentWillMount() {
-    this.context.router.push('/docs/react/introduce-cn/');
+    if(this.context.router.location.pathname=='index-cn'){
+      this.context.router.push('/docs/react/introduce-cn');
+    }
   }
 
   componentDidMount() {
@@ -116,15 +118,21 @@ export default class Layout extends React.Component {
     //   </a>
     // );
 
-    return (
-      <IntlProvider locale={appLocale.locale} messages={appLocale.messages}>
-        <div className="page-wrapper">
-          {/* {promoteBanner} */}
-          <Header {...restProps} />
-          {children}
-          {/* <Footer {...restProps} /> */}
-        </div>
-      </IntlProvider>
-    );
+
+    if (this.context.router.routes[1].path === 'docs/react/:children'||this.context.router.routes[1].path ==='components/:children/') {
+      return (
+        <IntlProvider locale={appLocale.locale} messages={appLocale.messages}>
+          <div className="page-wrapper">
+            {/* {promoteBanner} */}
+            <Header {...restProps} />
+            {children}
+            {/* <Footer {...restProps} /> */}
+          </div>
+        </IntlProvider>
+      );
+    } 
+    else {
+      return null;
+    }
   }
 }

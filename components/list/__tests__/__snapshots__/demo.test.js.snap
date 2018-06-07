@@ -36,13 +36,13 @@ exports[`renders ./components/list/demo/basic.md correctly 1`] = `
               <a
                 href="https://ant.design"
               >
-                Ant Design Title 1
+                Axx Design Title 1
               </a>
             </h4>
             <div
               class="ant-list-item-meta-description"
             >
-              Ant Design, a design language for background applications, is refined by Ant UED Team
+              Axx Design, a design language for background applications, is refined by Ant UED Team
             </div>
           </div>
         </div>
@@ -73,13 +73,13 @@ exports[`renders ./components/list/demo/basic.md correctly 1`] = `
               <a
                 href="https://ant.design"
               >
-                Ant Design Title 2
+                Axx Design Title 2
               </a>
             </h4>
             <div
               class="ant-list-item-meta-description"
             >
-              Ant Design, a design language for background applications, is refined by Ant UED Team
+              Axx Design, a design language for background applications, is refined by Ant UED Team
             </div>
           </div>
         </div>
@@ -110,13 +110,13 @@ exports[`renders ./components/list/demo/basic.md correctly 1`] = `
               <a
                 href="https://ant.design"
               >
-                Ant Design Title 3
+                Axx Design Title 3
               </a>
             </h4>
             <div
               class="ant-list-item-meta-description"
             >
-              Ant Design, a design language for background applications, is refined by Ant UED Team
+              Axx Design, a design language for background applications, is refined by Ant UED Team
             </div>
           </div>
         </div>
@@ -147,13 +147,13 @@ exports[`renders ./components/list/demo/basic.md correctly 1`] = `
               <a
                 href="https://ant.design"
               >
-                Ant Design Title 4
+                Axx Design Title 4
               </a>
             </h4>
             <div
               class="ant-list-item-meta-description"
             >
-              Ant Design, a design language for background applications, is refined by Ant UED Team
+              Axx Design, a design language for background applications, is refined by Ant UED Team
             </div>
           </div>
         </div>
@@ -912,13 +912,13 @@ exports[`renders ./components/list/demo/vertical.md correctly 1`] = `
                   <a
                     href="http://ant.design"
                   >
-                    ant design part 0
+                    Axx Design part 0
                   </a>
                 </h4>
                 <div
                   class="ant-list-item-meta-description"
                 >
-                  Ant Design, a design language for background applications, is refined by Ant UED Team.
+                  Axx Design, a design language for background applications, is refined by Ant UED Team.
                 </div>
               </div>
             </div>
@@ -1008,13 +1008,13 @@ exports[`renders ./components/list/demo/vertical.md correctly 1`] = `
                   <a
                     href="http://ant.design"
                   >
-                    ant design part 1
+                    Axx Design part 1
                   </a>
                 </h4>
                 <div
                   class="ant-list-item-meta-description"
                 >
-                  Ant Design, a design language for background applications, is refined by Ant UED Team.
+                  Axx Design, a design language for background applications, is refined by Ant UED Team.
                 </div>
               </div>
             </div>
@@ -1104,13 +1104,13 @@ exports[`renders ./components/list/demo/vertical.md correctly 1`] = `
                   <a
                     href="http://ant.design"
                   >
-                    ant design part 2
+                    Axx Design part 2
                   </a>
                 </h4>
                 <div
                   class="ant-list-item-meta-description"
                 >
-                  Ant Design, a design language for background applications, is refined by Ant UED Team.
+                  Axx Design, a design language for background applications, is refined by Ant UED Team.
                 </div>
               </div>
             </div>
@@ -1175,7 +1175,7 @@ exports[`renders ./components/list/demo/vertical.md correctly 1`] = `
   >
     <div>
       <b>
-        ant design
+        Axx Design
       </b>
        footer part
     </div>
