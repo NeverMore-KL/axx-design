@@ -26,7 +26,7 @@ import 'axxd/dist/axxd.css';  // or 'axxd/dist/axxd.less'
 
 ```bash
 $ git clone https://github.com/gaosife/axx-design.git
-$ cd ant-design
+$ cd axx-design
 $ npm install
 $ npm run start
 ```
@@ -37,7 +37,7 @@ $ npm run start
 
 ### Run all test cases
 ``` bash
-$ npm test
+$ npm test -- -u
 ```
 
 ### Run test cases for one file
@@ -45,12 +45,12 @@ $ npm test
 $ npm test -- components/button/__tests__/index.test.js
 ```
 
-### Update snapshot files
-```bash
-$ npm test -- -u
-```
-
 ## Publish site to gh-pages
 ```bash
-$ npm update && npm run deploy
+$ npm run site
 ```
+
+## 分支管理
+- master   
+- pub_dev  预发布
+- dev      开发
