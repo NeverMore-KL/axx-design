@@ -51,7 +51,7 @@
   background-color: @input-bg;
   background-image: none;
   border: @border-width-base @border-style-base @input-border-color;
-  border-radius: @border-radius-base;
+  border-radius: @border-radius-sm;
   .placeholder(); // Reset placeholder
   transition: all .3s;
 
@@ -147,7 +147,7 @@
     text-align: center;
     background-color: @input-addon-bg;
     border: @border-width-base @border-style-base @input-border-color;
-    border-radius: @border-radius-base;
+    border-radius: @border-radius-sm;
     position: relative;
     transition: all .3s;
 
@@ -288,8 +288,8 @@
     & > .@{ant-prefix}-cascader-picker:first-child .@{ant-prefix}-input,
     & > .@{ant-prefix}-mention-wrapper:first-child .@{ant-prefix}-mention-editor,
     & > .@{ant-prefix}-time-picker:first-child .@{ant-prefix}-time-picker-input {
-      border-top-left-radius: @border-radius-base;
-      border-bottom-left-radius: @border-radius-base;
+      border-top-left-radius: @border-radius-sm;
+      border-bottom-left-radius: @border-radius-sm;
     }
 
     & > *:last-child,
@@ -299,8 +299,8 @@
     & > .@{ant-prefix}-cascader-picker:last-child .@{ant-prefix}-input,
     & > .@{ant-prefix}-mention-wrapper:last-child .@{ant-prefix}-mention-editor,
     & > .@{ant-prefix}-time-picker:last-child .@{ant-prefix}-time-picker-input {
-      border-top-right-radius: @border-radius-base;
-      border-bottom-right-radius: @border-radius-base;
+      border-top-right-radius: @border-radius-sm;
+      border-bottom-right-radius: @border-radius-sm;
       border-right-width: 1px;
     }
   }
