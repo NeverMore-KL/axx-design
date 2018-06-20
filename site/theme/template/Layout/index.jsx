@@ -60,7 +60,7 @@ export default class Layout extends React.Component {
   }
 
   componentWillMount() {
-    if(this.context.router.location.pathname=='index-cn'){
+    if (this.context.router.location.pathname === 'index-cn') {
       this.context.router.push('/docs/react/introduce-cn');
     }
   }
@@ -119,7 +119,7 @@ export default class Layout extends React.Component {
     // );
 
 
-    if (this.context.router.routes[1].path === 'docs/react/:children'||this.context.router.routes[1].path ==='components/:children/') {
+    if (this.context.router.routes[1].path === 'docs/react/:children' || this.context.router.routes[1].path === 'components/:children/') {
       return (
         <IntlProvider locale={appLocale.locale} messages={appLocale.messages}>
           <div className="page-wrapper">
@@ -130,9 +130,7 @@ export default class Layout extends React.Component {
           </div>
         </IntlProvider>
       );
-    } 
-    else {
-      return null;
     }
+    return null;
   }
 }

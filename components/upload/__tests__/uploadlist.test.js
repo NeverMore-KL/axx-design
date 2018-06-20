@@ -61,7 +61,7 @@ describe('Upload List', () => {
     await delay(400);
     wrapper.update();
     expect(wrapper.find('.ant-upload-list-item').hostNodes().length).toBe(1);
-  });
+  }, 10000);
 
   it('should be uploading when upload a file', (done) => {
     let wrapper;
@@ -240,7 +240,7 @@ describe('Upload List', () => {
     expect(handleRemove).toBeCalledWith(fileList[1]);
     await delay(0);
     expect(handleChange.mock.calls.length).toBe(2);
-  });
+  }, 10000);
 
   it('should generate thumbUrl from file', async () => {
     const handlePreview = jest.fn();
@@ -260,7 +260,7 @@ describe('Upload List', () => {
     wrapper.setState({});
     await delay(200);
     expect(wrapper.state().fileList[2].thumbUrl).not.toBeFalsy();
-  });
+  }, 10000);
 
   it('should non-image format file preview', () => {
     const list = [

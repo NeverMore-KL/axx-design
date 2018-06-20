@@ -20,8 +20,7 @@ function getModuleData(props) {
   const { pathname } = props.location;
   const moduleName = /^\/?components/.test(pathname) ?
     'components' : pathname.split('/').filter(item => item).slice(0, 2).join('/');
-  const moduleData = moduleName === 'components' || moduleName === 'docs/react' 
-  ||moduleName === 'changelog' || moduleName === 'changelog-cn' ?
+  const moduleData = moduleName === 'components' || moduleName === 'docs/react' || moduleName === 'changelog' || moduleName === 'changelog-cn' ?
     [...props.picked.components, ...props.picked['docs/react'], ...props.picked.changelog] :
     props.picked[moduleName];
   const excludedSuffix = utils.isZhCN(props.location.pathname) ? 'en-US.md' : 'zh-CN.md';

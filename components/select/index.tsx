@@ -129,7 +129,7 @@ export default class Select extends React.Component<SelectProps, {}> {
       className = '',
       size,
       mode,
-      ...restProps,
+      ...restProps
     } = this.props;
     const cls = classNames({
       [`${prefixCls}-lg`]: size === 'large',

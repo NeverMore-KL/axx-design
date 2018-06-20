@@ -6,6 +6,7 @@ const transformIgnorePatterns = [
 ];
 
 module.exports = {
+  setTimeout:10000,
   setupFiles: [
     './tests/setup.js',
   ],
