@@ -1,9 +1,7 @@
 @import "../../style/themes/default";
 @import "../../style/mixins/index";
 @import "../../input/style/mixin";
-
 @input-number-prefix-cls: ~"@{ant-prefix}-input-number";
-
 .@{input-number-prefix-cls} {
   .reset-component;
   .input;
@@ -13,7 +11,6 @@
   border: @border-width-base @border-style-base @border-color-base;
   border-radius: @border-radius-base;
   width: 90px;
-
   &-handler {
     text-align: center;
     line-height: 0;
@@ -33,7 +30,6 @@
       color: @primary-5;
     }
   }
-
   &-handler-up-inner,
   &-handler-down-inner {
     .iconfont-mixin();
@@ -47,15 +43,12 @@
     right: 4px;
     color: @text-color-secondary;
   }
-
   &:hover {
     .hover();
   }
-
   &-focused {
     .active();
   }
-
   &-disabled {
     .disabled();
     .@{input-number-prefix-cls}-input {
@@ -66,7 +59,6 @@
       display: none;
     }
   }
-
   &-input {
     width: 100%;
     text-align: left;
@@ -81,30 +73,26 @@
     padding: 0 @control-padding-horizontal - 1px;
     display: block;
     .placeholder();
-
     &[disabled] {
       .disabled();
+      border-top:1px solid #d9d9d9;
     }
   }
-
   &-lg {
     padding: 0;
     font-size: @font-size-lg;
-
     input {
       height: @input-height-lg - 2px;
+      border-bottom: 1px solid #d9d9d9;
     }
   }
-
   &-sm {
     padding: 0;
-
     input {
       height: @input-height-sm - 2px;
       padding: 0 @control-padding-horizontal-sm - 1px;
     }
   }
-
   &-handler-wrap {
     border-left: @border-width-base @border-style-base @border-color-base;
     width: 22px;
@@ -118,15 +106,12 @@
     transition: opacity 0.24s linear 0.1s;
     z-index: 2; // https://github.com/ant-design/ant-design/issues/6289
   }
-
   &-handler-wrap:hover &-handler {
     height: 40%;
   }
-
   &:hover &-handler-wrap {
     opacity: 1;
   }
-
   &-handler-up {
     cursor: pointer;
     &-inner {
@@ -141,7 +126,6 @@
       height: 60% !important;
     }
   }
-
   &-handler-down {
     border-top: @border-width-base @border-style-base @border-color-base;
     top: -1px;
@@ -158,12 +142,10 @@
       height: 60% !important;
     }
   }
-
   &-handler-up-disabled,
   &-handler-down-disabled {
     cursor: not-allowed;
   }
-
   &-handler-up-disabled:hover &-handler-up-inner,
   &-handler-down-disabled:hover &-handler-down-inner {
     color: @disabled-color;
