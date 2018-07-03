@@ -3,6 +3,7 @@ import { mount } from 'enzyme';
 import Upload from '..';
 import Form from '../../form';
 import { errorRequest, successRequest } from './requests';
+import { setup, teardown } from './mock';
 
 const delay = timeout => new Promise(resolve => setTimeout(resolve, timeout));
 
@@ -21,11 +22,14 @@ const fileList = [{
 }];
 
 describe('Upload List', () => {
+  beforeEach(() => setup());
+  afterEach(() => teardown());
+
   // https://github.com/ant-design/ant-design/issues/4653
   it('should use file.thumbUrl for <img /> in priority', () => {
     const wrapper = mount(
       <Upload defaultFileList={fileList} listType="picture">
-        <button>upload</button>
+        <button type="button">upload</button>
       </Upload>
     );
     fileList.forEach((file, i) => {
@@ -53,7 +57,7 @@ describe('Upload List', () => {
     }];
     const wrapper = mount(
       <Upload defaultFileList={list}>
-        <button>upload</button>
+        <button type="button">upload</button>
       </Upload>
     );
     expect(wrapper.find('.ant-upload-list-item').length).toBe(2);
@@ -61,7 +65,7 @@ describe('Upload List', () => {
     await delay(400);
     wrapper.update();
     expect(wrapper.find('.ant-upload-list-item').hostNodes().length).toBe(1);
-  }, 10000);
+  });
 
   it('should be uploading when upload a file', (done) => {
     let wrapper;
@@ -80,7 +84,7 @@ describe('Upload List', () => {
         onChange={onChange}
         customRequest={successRequest}
       >
-        <button>upload</button>
+        <button type="button">upload</button>
       </Upload>
     );
     wrapper.find('input').simulate('change', {
@@ -106,7 +110,7 @@ describe('Upload List', () => {
         onChange={onChange}
         customRequest={errorRequest}
       >
-        <button>upload</button>
+        <button type="button">upload</button>
       </Upload>
     );
     wrapper.find('input').simulate('change', {
@@ -127,7 +131,7 @@ describe('Upload List', () => {
         onChange={handleChange}
         beforeUpload={() => false}
       >
-        <button>upload</button>
+        <button type="button">upload</button>
       </Upload>
     );
 
@@ -148,15 +152,14 @@ describe('Upload List', () => {
     let errors;
     class TestForm extends React.Component {
       handleSubmit = () => {
-        const { validateFields } = this.props.form;
+        const { form: { validateFields } } = this.props;
         validateFields((err) => {
           errors = err;
         });
       }
 
       render() {
-        const { getFieldDecorator } = this.props.form;
-
+        const { form: { getFieldDecorator } } = this.props;
         return (
           <Form onSubmit={this.handleSubmit}>
             <Form.Item>
@@ -179,7 +182,7 @@ describe('Upload List', () => {
                 <Upload
                   beforeUpload={() => false}
                 >
-                  <button>upload</button>
+                  <button type="button">upload</button>
                 </Upload>
               )}
             </Form.Item>
@@ -212,7 +215,7 @@ describe('Upload List', () => {
         defaultFileList={fileList}
         onPreview={handlePreview}
       >
-        <button>upload</button>
+        <button type="button">upload</button>
       </Upload>
     );
     wrapper.find('.anticon-eye-o').at(0).simulate('click');
@@ -231,7 +234,7 @@ describe('Upload List', () => {
         onRemove={handleRemove}
         onChange={handleChange}
       >
-        <button>upload</button>
+        <button type="button">upload</button>
       </Upload>
     );
     wrapper.find('.anticon-delete').at(0).simulate('click');
@@ -240,7 +243,7 @@ describe('Upload List', () => {
     expect(handleRemove).toBeCalledWith(fileList[1]);
     await delay(0);
     expect(handleChange.mock.calls.length).toBe(2);
-  }, 10000);
+  });
 
   it('should generate thumbUrl from file', async () => {
     const handlePreview = jest.fn();
@@ -254,13 +257,13 @@ describe('Upload List', () => {
         defaultFileList={newFileList}
         onPreview={handlePreview}
       >
-        <button>upload</button>
+        <button type="button">upload</button>
       </Upload>
     );
     wrapper.setState({});
     await delay(200);
     expect(wrapper.state().fileList[2].thumbUrl).not.toBeFalsy();
-  }, 10000);
+  });
 
   it('should non-image format file preview', () => {
     const list = [
@@ -328,7 +331,7 @@ describe('Upload List', () => {
         listType="picture"
         defaultFileList={list}
       >
-        <button>upload</button>
+        <button type="button">upload</button>
       </Upload>
     );
     expect(wrapper.render()).toMatchSnapshot();
