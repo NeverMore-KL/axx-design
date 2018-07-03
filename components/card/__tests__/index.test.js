@@ -24,7 +24,10 @@ describe('Card', () => {
   }
 
   testMethod('resize card will trigger different padding', () => {
-    const wrapper = mount(<Card title="xxx">xxx</Card>);
+    const wrapper = mount(
+      <Card title="xxx">
+        xxx
+      </Card>);
     fakeResizeWindowTo(wrapper, 1000);
     jest.runAllTimers();
     wrapper.update();

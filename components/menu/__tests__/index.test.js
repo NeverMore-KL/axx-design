@@ -18,10 +18,16 @@ describe('Menu', () => {
     const wrapper = mount(
       <Menu defaultOpenKeys={['1']} mode="horizontal">
         <SubMenu key="1" title="submenu1">
-          <Menu.Item key="submenu1">Option 1</Menu.Item>
-          <Menu.Item key="submenu2">Option 2</Menu.Item>
+          <Menu.Item key="submenu1">
+Option 1
+          </Menu.Item>
+          <Menu.Item key="submenu2">
+Option 2
+          </Menu.Item>
         </SubMenu>
-        <Menu.Item key="2">menu2</Menu.Item>
+        <Menu.Item key="2">
+menu2
+        </Menu.Item>
       </Menu>
     );
     expect(wrapper.find('.ant-menu-sub').at(0).hasClass('ant-menu-hidden')).not.toBe(true);
@@ -31,10 +37,16 @@ describe('Menu', () => {
     const wrapper = mount(
       <Menu defaultOpenKeys={['1']} mode="inline">
         <SubMenu key="1" title="submenu1">
-          <Menu.Item key="submenu1">Option 1</Menu.Item>
-          <Menu.Item key="submenu2">Option 2</Menu.Item>
+          <Menu.Item key="submenu1">
+Option 1
+          </Menu.Item>
+          <Menu.Item key="submenu2">
+Option 2
+          </Menu.Item>
         </SubMenu>
-        <Menu.Item key="2">menu2</Menu.Item>
+        <Menu.Item key="2">
+menu2
+        </Menu.Item>
       </Menu>
     );
     expect(wrapper.find('.ant-menu-sub').at(0).hasClass('ant-menu-hidden')).not.toBe(true);
@@ -44,10 +56,16 @@ describe('Menu', () => {
     const wrapper = mount(
       <Menu defaultOpenKeys={['1']} mode="vertical">
         <SubMenu key="1" title="submenu1">
-          <Menu.Item key="submenu1">Option 1</Menu.Item>
-          <Menu.Item key="submenu2">Option 2</Menu.Item>
+          <Menu.Item key="submenu1">
+Option 1
+          </Menu.Item>
+          <Menu.Item key="submenu2">
+Option 2
+          </Menu.Item>
         </SubMenu>
-        <Menu.Item key="2">menu2</Menu.Item>
+        <Menu.Item key="2">
+menu2
+        </Menu.Item>
       </Menu>
     );
     expect(wrapper.find('.ant-menu-sub').at(0).hasClass('ant-menu-hidden')).not.toBe(true);
@@ -57,10 +75,16 @@ describe('Menu', () => {
     const wrapper = mount(
       <Menu openKeys={['1']} mode="horizontal" openTransitionName="">
         <SubMenu key="1" title="submenu1">
-          <Menu.Item key="submenu1">Option 1</Menu.Item>
-          <Menu.Item key="submenu2">Option 2</Menu.Item>
+          <Menu.Item key="submenu1">
+Option 1
+          </Menu.Item>
+          <Menu.Item key="submenu2">
+Option 2
+          </Menu.Item>
         </SubMenu>
-        <Menu.Item key="2">menu2</Menu.Item>
+        <Menu.Item key="2">
+menu2
+        </Menu.Item>
       </Menu>
     );
     expect(wrapper.find('.ant-menu-sub').hostNodes().at(0).hasClass('ant-menu-hidden')).not.toBe(true);
@@ -75,10 +99,16 @@ describe('Menu', () => {
     const wrapper = mount(
       <Menu openKeys={['1']} mode="inline" openAnimation="">
         <SubMenu key="1" title="submenu1">
-          <Menu.Item key="submenu1">Option 1</Menu.Item>
-          <Menu.Item key="submenu2">Option 2</Menu.Item>
+          <Menu.Item key="submenu1">
+Option 1
+          </Menu.Item>
+          <Menu.Item key="submenu2">
+Option 2
+          </Menu.Item>
         </SubMenu>
-        <Menu.Item key="2">menu2</Menu.Item>
+        <Menu.Item key="2">
+menu2
+        </Menu.Item>
       </Menu>
     );
     expect(wrapper.find('.ant-menu-sub').hostNodes().at(0).hasClass('ant-menu-hidden')).not.toBe(true);
@@ -93,10 +123,16 @@ describe('Menu', () => {
     const wrapper = mount(
       <Menu openKeys={['1']} mode="vertical" openTransitionName="">
         <SubMenu key="1" title="submenu1">
-          <Menu.Item key="submenu1">Option 1</Menu.Item>
-          <Menu.Item key="submenu2">Option 2</Menu.Item>
+          <Menu.Item key="submenu1">
+Option 1
+          </Menu.Item>
+          <Menu.Item key="submenu2">
+Option 2
+          </Menu.Item>
         </SubMenu>
-        <Menu.Item key="2">menu2</Menu.Item>
+        <Menu.Item key="2">
+menu2
+        </Menu.Item>
       </Menu>
     );
     expect(wrapper.find('.ant-menu-sub').hostNodes().at(0).hasClass('ant-menu-hidden')).not.toBe(true);
@@ -114,8 +150,12 @@ describe('Menu', () => {
     const wrapper = mount(
       <Menu mode="horizontal">
         <SubMenu title="submenu">
-          <Menu.Item key="1">menu1</Menu.Item>
-          <Menu.Item key="2">menu2</Menu.Item>
+          <Menu.Item key="1">
+menu1
+          </Menu.Item>
+          <Menu.Item key="2">
+menu2
+          </Menu.Item>
         </SubMenu>
       </Menu>
     );
@@ -127,10 +167,16 @@ describe('Menu', () => {
     const wrapper = mount(
       <Menu openKeys={['1']} mode="inline">
         <SubMenu key="1" title="submenu1">
-          <Menu.Item key="submenu1">Option 1</Menu.Item>
-          <Menu.Item key="submenu2">Option 2</Menu.Item>
+          <Menu.Item key="submenu1">
+Option 1
+          </Menu.Item>
+          <Menu.Item key="submenu2">
+Option 2
+          </Menu.Item>
         </SubMenu>
-        <Menu.Item key="2">menu2</Menu.Item>
+        <Menu.Item key="2">
+menu2
+        </Menu.Item>
       </Menu>
     );
     expect(wrapper.find('.ant-menu-sub').at(0).hasClass('ant-menu-hidden')).not.toBe(true);
@@ -145,7 +191,9 @@ describe('Menu', () => {
       <Menu defaultOpenKeys={['1']} mode="inline">
         <Menu.Item key="menu1">
           <Icon type="inbox" />
-          <span>Option</span>
+          <span>
+Option
+          </span>
         </Menu.Item>
         <SubMenu key="1" title="submenu1">
           <Menu.Item key="submenu1">
@@ -182,7 +230,9 @@ describe('Menu', () => {
       <Menu defaultOpenKeys={['not-existed']} mode="inline">
         <Menu.Item key="menu1">
           <Icon type="inbox" />
-          <span>Option</span>
+          <span>
+Option
+          </span>
         </Menu.Item>
         <SubMenu key="1" title="submenu1">
           <Menu.Item key="submenu1">
@@ -226,10 +276,16 @@ describe('Menu', () => {
       const wrapper = mount(
         <Menu mode="inline">
           <SubMenu key="1" title="submenu1">
-            <Menu.Item key="submenu1">Option 1</Menu.Item>
-            <Menu.Item key="submenu2">Option 2</Menu.Item>
+            <Menu.Item key="submenu1">
+Option 1
+            </Menu.Item>
+            <Menu.Item key="submenu2">
+Option 2
+            </Menu.Item>
           </SubMenu>
-          <Menu.Item key="2">menu2</Menu.Item>
+          <Menu.Item key="2">
+menu2
+          </Menu.Item>
         </Menu>
       );
       expect(wrapper.find('.ant-menu-sub').length).toBe(0);
@@ -245,10 +301,16 @@ describe('Menu', () => {
       const wrapper = mount(
         <Menu mode="vertical">
           <SubMenu key="1" title="submenu1">
-            <Menu.Item key="submenu1">Option 1</Menu.Item>
-            <Menu.Item key="submenu2">Option 2</Menu.Item>
+            <Menu.Item key="submenu1">
+Option 1
+            </Menu.Item>
+            <Menu.Item key="submenu2">
+Option 2
+            </Menu.Item>
           </SubMenu>
-          <Menu.Item key="2">menu2</Menu.Item>
+          <Menu.Item key="2">
+menu2
+          </Menu.Item>
         </Menu>
       );
       expect(wrapper.find('.ant-menu-sub').length).toBe(0);
@@ -264,10 +326,16 @@ describe('Menu', () => {
       const wrapper = mount(
         <Menu mode="horizontal">
           <SubMenu key="1" title="submenu1">
-            <Menu.Item key="submenu1">Option 1</Menu.Item>
-            <Menu.Item key="submenu2">Option 2</Menu.Item>
+            <Menu.Item key="submenu1">
+Option 1
+            </Menu.Item>
+            <Menu.Item key="submenu2">
+Option 2
+            </Menu.Item>
           </SubMenu>
-          <Menu.Item key="2">menu2</Menu.Item>
+          <Menu.Item key="2">
+menu2
+          </Menu.Item>
         </Menu>
       );
       expect(wrapper.find('.ant-menu-sub').length).toBe(0);

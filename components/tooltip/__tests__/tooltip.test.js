@@ -14,7 +14,9 @@ describe('Tooltip', () => {
         mouseLeaveDelay={0}
         onVisibleChange={onVisibleChange}
       >
-        <div id="hello">Hello world!</div>
+        <div id="hello">
+          Hello world!
+        </div>
       </Tooltip>
     );
 
@@ -60,7 +62,9 @@ describe('Tooltip', () => {
         mouseLeaveDelay={0}
         onVisibleChange={onVisibleChange}
       >
-        <button disabled>Hello world!</button>
+        <button type="button" disabled>
+Hello world!
+        </button>
       </Tooltip>
     );
 
@@ -84,7 +88,9 @@ describe('Tooltip', () => {
         mouseLeaveDelay={0}
         onVisibleChange={onVisibleChange}
       >
-        <Button disabled>Hello world!</Button>
+        <Button disabled>
+          Hello world!
+        </Button>
       </Tooltip>
     );
 
@@ -102,12 +108,16 @@ describe('Tooltip', () => {
   it('should render disabled Button style properly', () => {
     const wrapper1 = mount(
       <Tooltip title="xxxxx">
-        <Button disabled>Hello world!</Button>
+        <Button disabled>
+          Hello world!
+        </Button>
       </Tooltip>
     );
     const wrapper2 = mount(
       <Tooltip title="xxxxx">
-        <Button disabled style={{ display: 'block' }}>Hello world!</Button>
+        <Button disabled style={{ display: 'block' }}>
+          Hello world!
+        </Button>
       </Tooltip>
     );
     expect(wrapper1.find('span').first().getDOMNode().style.display).toBe('inline-block');
@@ -122,7 +132,9 @@ describe('Tooltip', () => {
         mouseEnterDelay={0}
         mouseLeaveDelay={0}
       >
-        <button disabled>Hello world!</button>
+        <button type="button" disabled>
+          Hello world!
+        </button>
       </Tooltip>
     );
 
@@ -143,7 +155,7 @@ describe('Tooltip', () => {
           mouseLeaveDelay={0}
           placement="bottomLeft"
         >
-          <button style={{ width: triggerWidth }}>
+          <button type="button" style={{ width: triggerWidth }}>
             Hello world!
           </button>
         </Tooltip>
@@ -160,7 +172,7 @@ describe('Tooltip', () => {
           placement="bottomLeft"
           arrowPointAtCenter
         >
-          <button style={{ width: triggerWidth }}>
+          <button type="button" style={{ width: triggerWidth }}>
             Hello world!
           </button>
         </Tooltip>

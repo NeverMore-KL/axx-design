@@ -67,14 +67,15 @@ function getStyle() {
 /* eslint-disable react/prefer-stateless-function */
 class Home extends React.Component {
   static contextTypes = {
-    intl: PropTypes.object.isRequired,
+    intl: PropTypes.instanceOf(Object).isRequired,
     isMobile: PropTypes.bool.isRequired,
   }
+
   render() {
     const { isMobile, intl } = this.context;
     const childProps = { ...this.props, isMobile, locale: intl.locale };
     return (
-      <DocumentTitle title={`Ant Design - ${this.props.intl.formatMessage({ id: 'app.home.slogan' })}`}>
+      <DocumentTitle title={`Ant Design - ${intl.formatMessage({ id: 'app.home.slogan' })}`}>
         <div className="main-wrapper">
           <Banner {...childProps} />
           <Page1 {...childProps} />

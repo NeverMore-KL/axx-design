@@ -11,7 +11,9 @@ describe('DropdownButton', () => {
       },
       overlay: (
         <Menu>
-          <Menu.Item>foo</Menu.Item>
+          <Menu.Item>
+foo
+          </Menu.Item>
         </Menu>
       ),
       disabled: false,
@@ -24,7 +26,7 @@ describe('DropdownButton', () => {
     const dropdownProps = wrapper.find(Dropdown).props();
 
     Object.keys(props).forEach((key) => {
-      expect(dropdownProps[key]).toBe(props[key]);
+      expect(dropdownProps[key]).toBe(props[key]); // eslint-disable-line
     });
   });
 

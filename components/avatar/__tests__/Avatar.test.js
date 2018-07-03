@@ -4,7 +4,10 @@ import Avatar from '..';
 
 describe('Avatar Render', () => {
   it('Render long string correctly', () => {
-    const wrapper = mount(<Avatar>TestString</Avatar>);
+    const wrapper = mount(
+      <Avatar>
+        TestString
+      </Avatar>);
     const children = wrapper.find('.ant-avatar-string');
     expect(children.length).toBe(1);
   });
@@ -13,7 +16,10 @@ describe('Avatar Render', () => {
     const div = global.document.createElement('div');
     global.document.body.appendChild(div);
 
-    const wrapper = mount(<Avatar src="http://error.url">Fallback</Avatar>, { attachTo: div });
+    const wrapper = mount(
+      <Avatar src="http://error.url">
+        Fallback
+      </Avatar>, { attachTo: div });
     wrapper.instance().setScale = jest.fn(() => wrapper.instance().setState({ scale: 0.5 }));
     wrapper.setState({ isImgExist: false });
 
