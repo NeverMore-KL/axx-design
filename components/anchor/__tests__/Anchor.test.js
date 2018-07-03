@@ -35,7 +35,10 @@ describe('Anchor Render', () => {
       root.id = 'root';
       document.body.appendChild(root);
     }
-    mount(<div id="API">Hello</div>, { attachTo: root });
+    mount(
+      <div id="API">
+        Hello
+      </div>, { attachTo: root });
     const wrapper = mount(
       <Anchor>
         <Link href="http://www.example.com/#API" title="API" />
@@ -52,7 +55,10 @@ describe('Anchor Render', () => {
       root.id = 'root';
       document.body.appendChild(root);
     }
-    mount(<div id="API">Hello</div>, { attachTo: root });
+    mount(
+      <div id="API">
+        Hello
+      </div>, { attachTo: root });
     const wrapper = mount(
       <Anchor>
         <Link href="##API" title="API" />

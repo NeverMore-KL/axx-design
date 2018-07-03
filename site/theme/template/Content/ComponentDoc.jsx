@@ -10,7 +10,7 @@ import EditButton from './EditButton';
 
 export default class ComponentDoc extends React.Component {
   static contextTypes = {
-    intl: PropTypes.object,
+    intl: PropTypes.instanceOf(Object),
   }
 
   constructor(props) {
@@ -22,8 +22,9 @@ export default class ComponentDoc extends React.Component {
   }
 
   handleExpandToggle = () => {
+    const { expandAll } = this.state;
     this.setState({
-      expandAll: !this.state.expandAll,
+      expandAll: !expandAll,
     });
   }
 
@@ -31,15 +32,15 @@ export default class ComponentDoc extends React.Component {
     const { props } = this;
     const { doc, location } = props;
     const { content, meta } = doc;
-    const { locale } = this.context.intl;
+    const { intl: { locale } } = this.context;
     const demos = Object.keys(props.demos).map(key => props.demos[key]);
-    const expand = this.state.expandAll;
+    const { expandAll } = this.state;
 
     const isSingleCol = meta.cols === 1;
     const leftChildren = [];
     const rightChildren = [];
-    const showedDemo = demos.some(demo => demo.meta.only) ?
-      demos.filter(demo => demo.meta.only) : demos.filter(demo => demo.preview);
+    const showedDemo = demos.some(demo => demo.meta.only)
+      ? demos.filter(demo => demo.meta.only) : demos.filter(demo => demo.preview);
     showedDemo.sort((a, b) => a.meta.order - b.meta.order)
       .forEach((demoData, index) => {
         const demoElem = (
@@ -47,7 +48,7 @@ export default class ComponentDoc extends React.Component {
             {...demoData}
             key={demoData.meta.filename}
             utils={props.utils}
-            expand={expand}
+            expand={expandAll}
             location={location}
           />
         );
@@ -59,7 +60,7 @@ export default class ComponentDoc extends React.Component {
       });
     const expandTriggerClass = classNames({
       'code-box-expand-trigger': true,
-      'code-box-expand-trigger-active': expand,
+      'code-box-expand-trigger-active': expandAll,
     });
 
     const jumper = showedDemo.map((demo) => {
@@ -87,7 +88,11 @@ export default class ComponentDoc extends React.Component {
             <h1>
               {title[locale] || title}
               {
-                !subtitle ? null : <span className="subtitle">{subtitle}</span>
+                !subtitle ? null : (
+                  <span className="subtitle">
+                    {subtitle}
+                  </span>
+                )
               }
               <EditButton title={<FormattedMessage id="app.content.edit-page" />} filename={filename} />
             </h1>
@@ -102,22 +107,26 @@ export default class ComponentDoc extends React.Component {
               <Icon
                 type="appstore"
                 className={expandTriggerClass}
-                title={expand ? '收起全部代码' : '展开全部代码'}
+                title={expandAll ? '收起全部代码' : '展开全部代码'}
                 onClick={this.handleExpandToggle}
               />
             </h2>
           </section>
           <Row gutter={16}>
             <Col span={isSingleCol ? '24' : '12'}
-              className={isSingleCol ?
-                'code-boxes-col-1-1' :
-                'code-boxes-col-2-1'
+              className={isSingleCol
+                ? 'code-boxes-col-1-1'
+                : 'code-boxes-col-2-1'
               }
             >
               {leftChildren}
             </Col>
             {
-              isSingleCol ? null : <Col className="code-boxes-col-2-1" span={12}>{rightChildren}</Col>
+              isSingleCol ? null : (
+                <Col className="code-boxes-col-2-1" span={12}>
+                  {rightChildren}
+                </Col>
+              )
             }
           </Row>
           {

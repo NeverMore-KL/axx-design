@@ -30,16 +30,16 @@ const promoteBannerImageUrl = 'https://gw.alipayobjects.com/zos/rmsportal/bpKcpw
 
 export default class Layout extends React.Component {
   static contextTypes = {
-    router: PropTypes.object.isRequired,
+    router: {},
   }
+
   static childContextTypes = {
     isMobile: PropTypes.bool,
   };
 
   getChildContext() {
-    return {
-      isMobile: this.state.isMobile,
-    };
+    const { isMobile: mobile } = this.state;
+    return { isMobile: mobile };
   }
 
   constructor(props) {
@@ -60,14 +60,16 @@ export default class Layout extends React.Component {
   }
 
   componentWillMount() {
-    if (this.context.router.location.pathname === 'index-cn') {
-      this.context.router.push('/docs/react/introduce-cn');
+    const context = this.context;
+    if (context.router.location.pathname === 'index-cn') {
+      context.router.push('/docs/react/introduce-cn');
     }
   }
 
   componentDidMount() {
+    const context = this.context;
     if (typeof window.ga !== 'undefined') {
-      this.context.router.listen((loc) => {
+      context.router.listen((loc) => {
         window.ga('send', 'pageview', loc.pathname + loc.search);
       });
     }
@@ -107,6 +109,7 @@ export default class Layout extends React.Component {
   render() {
     const { children, ...restProps } = this.props;
     const { appLocale } = this.state;
+    const context = this.context;
 
     // const promoteBanner = this.state.adBannerClosed ? null : (
     //   <a href="http://www.anijue.com/p/q/yuque423/pages/home/index.html?chInfo=ch_yuquebooks__chsub_antd" className="promote-banner" onClick={this.makeAdBannerClosed}>
@@ -119,7 +122,7 @@ export default class Layout extends React.Component {
     // );
 
 
-    if (this.context.router.routes[1].path === 'docs/react/:children' || this.context.router.routes[1].path === 'components/:children/') {
+    if (context.router.routes[1].path === 'docs/react/:children' || context.router.routes[1].path === 'components/:children/') {
       return (
         <IntlProvider locale={appLocale.locale} messages={appLocale.messages}>
           <div className="page-wrapper">

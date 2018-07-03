@@ -9,8 +9,8 @@ function pickerGenerator(module) {
   const tester = new RegExp(`^docs/${module}`);
   return (markdownData) => {
     const { filename } = markdownData.meta;
-    if (tester.test(filename) &&
-      !/\/demo$/.test(path.dirname(filename))) {
+    if (tester.test(filename)
+      && !/\/demo$/.test(path.dirname(filename))) {
       return {
         meta: markdownData.meta,
       };
@@ -28,8 +28,8 @@ module.exports = {
   pick: {
     components(markdownData) {
       const { filename } = markdownData.meta;
-      if (!/^components/.test(filename) ||
-        /[/\\]demo$/.test(path.dirname(filename))) return;
+      if (!/^components/.test(filename)
+        || /[/\\]demo$/.test(path.dirname(filename))) return;
 
       return {
         meta: markdownData.meta,

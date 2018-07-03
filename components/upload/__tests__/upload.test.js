@@ -47,7 +47,9 @@ describe('Upload', () => {
 
     const wrapper = mount(
       <Upload {...props}>
-        <button type="button">upload</button>
+        <button type="button">
+upload
+        </button>
       </Upload>
     );
 
@@ -84,7 +86,9 @@ describe('Upload', () => {
 
     const wrapper = mount(
       <Upload {...props}>
-        <button type="button">upload</button>
+        <button type="button">
+upload
+        </button>
       </Upload>
     );
 
@@ -119,7 +123,9 @@ describe('Upload', () => {
 
     const wrapper = mount(
       <Upload {...props}>
-        <button type="button">upload</button>
+        <button type="button">
+upload
+        </button>
       </Upload>
     );
 
@@ -148,7 +154,9 @@ describe('Upload', () => {
 
     const wrapper = mount(
       <Upload {...props}>
-        <button type="button">upload</button>
+        <button type="button">
+upload
+        </button>
       </Upload>
     );
 

@@ -32,28 +32,33 @@ export default class ColorPaletteTool extends Component {
         text += ` 亮度建议不低于${primaryMinBrightness}（现在 ${(primaryColorInstance.hsv.v * 100).toFixed(2)}）`;
       }
     }
-    return <span className="color-palette-picker-validation">{text.trim()}</span>;
+    return (
+      <span className="color-palette-picker-validation">
+        {text.trim()}
+      </span>
+    );
   }
 
   render() {
+    const { primaryColor } = this.state;
     return (
       <div className="color-palette-horizontal">
         <div className="color-palette-pick">
           <FormattedMessage id="app.docs.color.pick-primary" />
         </div>
         <div className="main-color">
-          <ColorPatterns color={this.state.primaryColor} />
+          <ColorPatterns color={primaryColor} />
         </div>
         <div className="color-palette-picker">
           <span style={{ display: 'inline-block', verticalAlign: 'middle' }}>
             <ColorPicker
               type="chrome"
-              color={this.state.primaryColor}
+              color={primaryColor}
               onChange={this.handleChangeColor}
             />
           </span>
           <span className="color-palette-picker-value">
-            {this.state.primaryColor}
+            {primaryColor}
           </span>
           {this.renderColorValidation()}
         </div>
